@@ -4,8 +4,8 @@
 Aceptado
 
 ## Contexto
-[cite_start]El Sistema de Venta de Entradas busca digitalizar y centralizar el proceso de compra[cite: 9]. [cite_start]Una de las problemáticas más críticas identificadas es la "doble venta de entradas", lo que genera pérdida de confianza y conflictos en el acceso[cite: 16]. 
-[cite_start]Para solucionar esto, el sistema requiere un bloqueo concurrente de los asientos al momento de que múltiples usuarios (compradores) intenten adquirir la misma entrada al mismo tiempo[cite: 33]. Por lo tanto, necesitamos un motor de almacenamiento que ofrezca un alto nivel de integridad referencial y soporte fuerte para transacciones ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad).
+El Sistema de Venta de Entradas busca digitalizar y centralizar el proceso de compra[cite: 9]. [cite_start]Una de las problemáticas más críticas identificadas es la "doble venta de entradas", lo que genera pérdida de confianza y conflictos en el acceso[cite: 16]. 
+Para solucionar esto, el sistema requiere un bloqueo concurrente de los asientos al momento de que múltiples usuarios (compradores) intenten adquirir la misma entrada al mismo tiempo[cite: 33]. Por lo tanto, necesitamos un motor de almacenamiento que ofrezca un alto nivel de integridad referencial y soporte fuerte para transacciones ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad).
 
 ## Decisión
 Se ha decidido utilizar **PostgreSQL** como la base de datos principal del sistema para almacenar usuarios, eventos, entradas, transacciones y estados de validación.
